@@ -38,7 +38,7 @@ public static function getEmail($em){
     {
 
         global $db;
-        $encryptedpwd = password_hash($pwd, PASSWORD_BCRYPT);
+        $encryptedpwd = md5($pwd);
         $img = "assets/images/pr.png";
         $date = date("Y-m-d");
 
@@ -57,7 +57,7 @@ public static function getEmail($em){
     {
         global $db;
         
-        $pw=password_hash($pw,PASSWORD_BCRYPT);
+        $pw=md5($pw);
 
         $query = $db->prepare('
         

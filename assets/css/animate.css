@@ -1,0 +1,45 @@
+.ml3 {
+    font-weight: 900;
+    font-size: 60px;
+    background: -webkit-linear-gradient(#E0BF3C, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.m12 {
+    font-weight: 700;
+    font-size: 40px;
+    background: -webkit-linear-gradient(#E2A42B, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 35px 0;
+    text-align: center;
+
+}
+
+#loginText {
+
+    padding: 45px;
+    display: table-cell;
+    width: auto;
+    right: -35%;
+    position: absolute;
+
+}
+
+#loginText ul {
+
+    padding: 0;
+
+
+}
+
+#loginText ul>li {
+
+    font-size: 35px;
+    list-style-type: none;
+    padding: 6px 40px;
+    background: url(../images/icons/check.png) no-repeat;
+
+}

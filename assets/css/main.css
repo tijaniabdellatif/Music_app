@@ -1,0 +1,264 @@
+html,
+body {
+
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+*{
+     font-family:'Barlow Condensed', sans-serif;
+     color:#EEEEEE;
+}
+
+#PlayContainer{
+
+    width:100%;
+    background-color: #282828;
+    bottom:0;
+    position: fixed;
+    min-width: 620px;
+
+}
+
+#PlayBar{
+
+    display: flex;
+    height:90px;
+    padding:16px;
+    box-sizing: border-box;
+}
+
+#PlayLeft,
+#PlayRight
+{
+
+    width:35%;
+    min-width: 180px;
+}
+
+#PlayRight{
+
+    position: relative;
+    margin-top: 16px;
+}
+
+#PlayCenter
+{
+     width:30%;
+     max-width: 700px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+}
+
+.content {
+
+    width:100%;
+    height:57px;
+}
+
+.playerControls .buttons {
+
+    margin:0 auto;
+    display:table;
+   
+}
+
+.controlButton{
+
+    background-color: transparent;
+    border:none;
+    vertical-align: middle;
+}
+
+.controlButton img {
+
+
+    width:25px;
+    height: 25px;
+}
+
+.controlButton.play img,
+ .controlButton.pause img {
+
+    width:40px;
+    height:40px;
+}
+
+.controlButton:hover{
+    cursor: pointer;
+}
+
+
+.playbackbar{
+
+    display: flex;
+}
+.progressTime{
+
+    color:#a0a0a0;
+    font-size: 12px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.progressBar{
+
+    width: 100%;
+    height: 12px;
+    display: inline-flex;
+    cursor: pointer;
+   
+}
+
+.progressBg{
+
+    background-color: #404040;
+    height:4px;
+    width:100%;
+    border-radius: 2px;
+}
+
+.progress{
+
+    background-color: #a0a0a0;
+    height:4px;
+    width:0;
+    border-radius: 2px;
+}
+
+.playbackbar .progressBar{
+ margin :8px 0;
+}
+
+.albumLink>.albumArtwork:nth-child(1) {
+
+    height: 100%;
+    max-width: 57px;
+    margin-right: 15px;
+    float: left;
+    background-size: cover;
+}
+
+.trackInfo{
+
+
+display: table;
+}
+
+.trackInfo .trackName{
+
+    margin: 6px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.trackInfo .artistName span {
+
+    font-size: 13px;
+    color: grey;
+
+}
+
+.volumeBar {
+
+    width:125px;
+    position:  absolute;
+    right : 0;
+ 
+}
+
+.volumeBar .progressBar{
+    width:125px;
+}
+
+.volume>img:nth-child(1){
+
+    position: absolute;
+    margin: 10px -42px;
+}
+.volumeBar>div:nth-child(2){
+
+    position: absolute;
+    margin: 22px -14px;
+}
+
+#top-container{
+
+    min-height: 100%;
+    width: 100%;
+
+}
+
+#navbar-container{
+
+    background-color: hsl(240, 4%, 5%);
+    width:250px;
+    height:100vh;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+#navbar-container>.navbar {
+
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+
+}
+
+.logo img {
+
+width:32px;
+margin-bottom: 20px;
+
+}
+
+.navbar .group {
+
+     border-top: 1px solid #a0a0a0a0;
+     padding: 10px 0;
+}
+
+/* #navbar-container>nav>div:nth-child(2) {
+
+    border-top: 1px solid #a0a0a0a0;
+    padding: 10px 0;
+} */
+
+.navItem{
+
+        padding: 10px 0;
+        font-size: 20;
+        font-weight: 500;
+        display: block;
+        letter-spacing: 4px;
+        position: relative;
+}
+
+.navItem a {
+
+    text-decoration: none;
+    color: #a0a0a0;
+}
+
+.navItem a:hover {
+
+   
+    color: #F0F0F0F0;
+}
+
+#navbar-container>nav>div:nth-child(2)>div>a>img {
+
+        position: absolute;
+        display: inline-block;
+        margin: 0px auto;
+        width: 15%;
+     
+        right : 0;
+        bottom: 13%;
+}
